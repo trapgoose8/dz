@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+
+<body>
+    <h1 align="center">Задание №7 ЕГЭ</h1>
+    <form action="test" method="post">
+        <div class="task">
+            <div class="task_image">
+                <span>1.</span>
+                <img src="{{ url_for('static', filename='images/01.png') }}" alt="">
+            </div>
+            <input name="answer" placeholder="Введите ответ">
+        </div>
+
+        <div class="task">
+            <div class="task_image">
+                <span>2.</span>
+                <img src="{{ url_for('static', filename='images/02.png') }}" alt="">
+            </div>
+            <input name="answer2" placeholder="Введите ответ">
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+
+</html>

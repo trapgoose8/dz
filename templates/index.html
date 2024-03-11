@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФИО</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <form action="login" method="post">
+        <label>ФИО: <input type="text" name="fio" placeholder="Введите ФИО" /></label>
+        <div class="classses">
+            <span>Класс: </span>
+            <ul>
+                <li><input type="radio" name="classes" value="10Т">10Т</li>
+                <li><input type="radio" name="classes" value="10И">10И</li>
+            </ul>
+        </div>
+        <button type="submit">Далее</button>
+    </form>
+</body>
+
+</html>
